@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BASIC POS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to the canteen! Here are our street foods menu.</h1>
+      <h3>
+        Prices are shown below. Click finalize order button once you're sure
+        with your orders.
+      </h3>
+      <ul>
+        <li>Burger - 60 pesos</li>
+        <li>Fries - 50 pesos</li>
+        <li>Fishball - 20 pesos</li>
+        <li>Kikiam - 25 pesos</li>
+      </ul>
+    </div>
+    <button class="addItem">Add a food item</button><br /><br />
+
+    <div class="main">
+      <div class="selectionContainer">
+        <label for="selection">Choice</label><br />
+        <select name="selection" class="selection">
+          <option value="60">Burger</option>
+          <option value="50">Fries</option>
+          <option value="20">Fishball</option>
+          <option value="25">Kikiam</option>
+        </select>
+        <br /><br />
+
+        <label for="quantity">Quantity</label><br />
+        <input type="number" name="quantity" class="quantity" />
+      </div>
+    </div>
+
+    <br />
+
+    <div class="quantityContainer"></div>
+
+    <br />
+
+    <hr />
+    <div class="payment">
+      <label for="pay">Cash</label><br />
+      <input type="number" />
+      <button class="payBtn">Pay!</button>
+    </div>
+
+    <script src="addFoodItem.js"></script>
+    <script src="orderItem.js"></script>
+  </body>
+</html>
