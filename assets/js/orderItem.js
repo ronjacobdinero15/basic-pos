@@ -25,10 +25,10 @@ function alertOrder(paidAmount, total) {
     return
   } else {
     if (paidAmount < total) {
-      alert(`Short of $${total - paidAmount}`)
+      alert(`Short of ₱${total - paidAmount}`)
     } else {
       let change = paidAmount - total
-      alert(`Order successful, change: $${change}`)
+      alert(`Order successful, change: ₱${change}`)
     }
   }
 }
