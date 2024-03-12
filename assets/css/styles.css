@@ -1,0 +1,92 @@
+body {
+  margin: 0 50px;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* HEADER */
+/* MAIN */
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.main .selectionContainer {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(122, 125, 159, 0.304);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.455);
+  padding: 20px;
+}
+/* PAYMENT */
+.remove {
+  position: absolute;
+  top: -1px;
+  right: -7px;
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.remove:hover {
+  background-color: rgb(245, 48, 48);
+  color: white;
+}
+/* PAYMENT */
+.payment .container {
+  width: 220px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.payment input {
+  width: 92%;
+}
+.payment .buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  gap: 10px;
+}
+.payment .buttons button {
+  margin: 0;
+}
+.payment .buttons #payBtn {
+  flex: 1;
+}
+.payment .buttons #clear {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 769px) {
+  body {
+    margin: 30px 15px !important;
+  }
+  /* MAIN */
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-right: 5px;
+  }
+  /* PAYMENT */
+  .payment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .payment p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .main {
+    grid-template-columns: 1fr;
+    margin-right: 10px;
+  }
+}

@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BASIC POS</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/icon.svg"
+      sizes="64x64"
     />
   </head>
   <body>
@@ -39,23 +45,33 @@
 
         <label for="quantity">Quantity</label><br />
         <input type="number" name="quantity" class="quantity" />
+
+        <button class="remove">✕</button>
       </div>
     </div>
 
     <br />
 
-    <div class="quantityContainer"></div>
-
-    <br />
-
     <hr />
     <div class="payment">
-      <label for="pay">Cash</label><br />
-      <input type="number" />
-      <button class="payBtn">Pay!</button>
+      <div class="container">
+        <label for="pay">Cash</label>
+        <input type="number" id="payAmount" />
+        <div class="buttons">
+          <button id="payBtn">Pay!</button>
+          <button id="clear">C</button>
+        </div>
+      </div>
     </div>
 
-    <script src="addFoodItem.js"></script>
-    <script src="orderItem.js"></script>
+    <script src="assets/js/addFoodItem.js"></script>
+    <script src="assets/js/orderItem.js"></script>
+    <script src="assets/js/removeItem.js"></script>
+    <script src="assets/js/clearAmount.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery (required for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
