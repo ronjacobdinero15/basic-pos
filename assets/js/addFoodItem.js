@@ -14,7 +14,7 @@ foodItem.addEventListener('click', () => {
         <br /><br />
 
         <label for="quantity">Quantity</label><br />
-        <input type="number" name="quantity" class="quantity" />
+        <input type="number" name="quantity" class="quantity" min="1" />
 
         <button class="remove">✕</button>`
 
